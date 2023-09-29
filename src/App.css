@@ -1,0 +1,85 @@
+/* General Styles */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Product List and Individual Product Styles */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.product {
+  width: 300px;
+  border: 1px solid #ccc;
+  margin: 16px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+/* Add to Cart Button Styles */
+.add-to-cart-button,
+.btn-primary {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover,
+.btn-primary:hover {
+  background-color: darkblue;
+}
+
+/* Bootstrap Carousel Styles */
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+.footer-item {
+  flex: 1;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .footer-item {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+.selected {
+  background-color: brightblue;
+  color: white;
+}
